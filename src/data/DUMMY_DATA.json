@@ -1,0 +1,581 @@
+{
+  "users": [
+    {
+      "id": "user1",
+      "name": "Demo User",
+      "email": "demo@jastipku.com",
+      "avatar": "https://i.pravatar.cc/150?u=demo",
+      "phone": "+62 812-3456-7890",
+      "address": "Jl. Sudirman No. 123, Jakarta Selatan",
+      "jastipPayBalance": 2500000,
+      "transactions": [
+        { "id": "tx1", "type": "topup", "amount": 3000000, "date": "2026-03-01", "status": "completed" },
+        { "id": "tx2", "type": "payment", "amount": 550000, "date": "2026-03-02", "status": "completed", "orderId": "order1" }
+      ]
+    },
+    {
+      "id": "user2",
+      "name": "Sarah Wijaya",
+      "email": "sarah.w@email.com",
+      "avatar": "https://i.pravatar.cc/150?u=sarah",
+      "phone": "+62 813-4567-8901",
+      "address": "Jl. Gatot Subroto No. 45, Jakarta Pusat"
+    },
+    {
+      "id": "user3",
+      "name": "Michael Tan",
+      "email": "michael.t@email.com",
+      "avatar": "https://i.pravatar.cc/150?u=michael",
+      "phone": "+62 814-5678-9012",
+      "address": "Jl. Asia Afrika No. 78, Bandung"
+    },
+    {
+      "id": "user4",
+      "name": "Lisa Chen",
+      "email": "lisa.c@email.com",
+      "avatar": "https://i.pravatar.cc/150?u=lisa",
+      "phone": "+62 815-6789-0123",
+      "address": "Jl. Tunjungan No. 90, Surabaya"
+    },
+    {
+      "id": "user5",
+      "name": "Andi Pratama",
+      "email": "andi.p@email.com",
+      "avatar": "https://i.pravatar.cc/150?u=andi",
+      "phone": "+62 816-7890-1234",
+      "address": "Jl. Malioboro No. 12, Yogyakarta"
+    }
+  ],
+  "jastipers": [
+    {
+      "id": "jastiper1",
+      "name": "Kevin Hartono",
+      "email": "kevin@jastipku.com",
+      "avatar": "https://i.pravatar.cc/150?u=kevin",
+      "phone": "+62 817-8901-2345",
+      "rating": 4.9,
+      "totalTrips": 24,
+      "totalOrders": 156,
+      "bio": "Frequently traveling to Korea & Japan for shopping. Trusted & responsive!",
+      "verified": true,
+      "joinedDate": "2024-01-15",
+      "jastipPayBalance": 8450000,
+      "transactions": [
+        { "id": "tx101", "type": "earning", "amount": 1056000, "date": "2026-02-15", "status": "completed", "orderId": "order6" },
+        { "id": "tx102", "type": "withdrawal", "amount": 2000000, "date": "2026-02-20", "status": "completed" }
+      ]
+    },
+    {
+      "id": "jastiper2",
+      "name": "Amanda Lee",
+      "email": "amanda@jastipku.com",
+      "avatar": "https://i.pravatar.cc/150?u=amanda",
+      "phone": "+62 818-9012-3456",
+      "rating": 4.8,
+      "totalTrips": 18,
+      "totalOrders": 98,
+      "bio": "Shopping addict who loves helping people shop in the US & Europe! Trusted brother",
+      "verified": true,
+      "joinedDate": "2024-03-20"
+    },
+    {
+      "id": "jastiper3",
+      "name": "Rudi Santoso",
+      "email": "rudi@jastipku.com",
+      "avatar": "https://i.pravatar.cc/150?u=rudi",
+      "phone": "+62 819-0123-4567",
+      "rating": 4.7,
+      "totalTrips": 15,
+      "totalOrders": 72,
+      "bio": "Pilot who frequently flies to Thailand & Singapore. Ready to help with your shopping!",
+      "verified": true,
+      "joinedDate": "2024-05-10"
+    },
+    {
+      "id": "jastiper4",
+      "name": "Jessica Wang",
+      "email": "jessica@jastipku.com",
+      "avatar": "https://i.pravatar.cc/150?u=jessica",
+      "phone": "+62 820-1234-5678",
+      "rating": 4.9,
+      "totalTrips": 30,
+      "totalOrders": 210,
+      "bio": "Fashion enthusiast! Frequently travels to Paris, Milan, & Tokyo for fashion week!",
+      "verified": true,
+      "joinedDate": "2023-11-05"
+    },
+    {
+      "id": "jastiper5",
+      "name": "David Lim",
+      "email": "david@jastipku.com",
+      "avatar": "https://i.pravatar.cc/150?u=david",
+      "phone": "+62 821-2345-6789",
+      "rating": 4.6,
+      "totalTrips": 12,
+      "totalOrders": 54,
+      "bio": "Student in Australia who loves helping with local Aussie products shopping!",
+      "verified": false,
+      "joinedDate": "2024-07-22"
+    }
+  ],
+  "trips": [
+    {
+      "id": "trip1",
+      "jastiperId": "jastiper1",
+      "destination": "South Korea",
+      "country": "South Korea",
+      "slug": "south-korea",
+      "departureDate": "2026-03-15",
+      "returnDate": "2026-03-25",
+      "status": "open",
+      "category": "K-Beauty & Fashion",
+      "description": "Trip to Seoul for shopping K-Beauty, skincare, and latest fashion in Myeongdong & Hongdae!",
+      "imageUrl": "https://images.unsplash.com/photo-1538485399081-7191377e8241?w=800",
+      "maxWeight": "20kg",
+      "fee": "10%",
+      "cities": [
+        { "name": "Busan", "jastiper_count": 2, "image": "/images/south-korea/south-korea-2.jpg" },
+        { "name": "Seoul", "jastiper_count": 3, "image": "/images/south-korea/south-korea-1.jpg" },
+        { "name": "Jeju", "jastiper_count": 1, "image": "/images/south-korea/south-korea-4.jpg" }
+      ]
+    },
+    {
+      "id": "trip2",
+      "jastiperId": "jastiper2",
+      "destination": "Japan",
+      "country": "Jepang",
+      "slug": "japan",
+      "departureDate": "2026-03-20",
+      "returnDate": "2026-03-30",
+      "status": "open",
+      "category": "Anime & Electronics",
+      "description": "Trip to Tokyo & Osaka! Request anime merchandise, electronics, snacks, and Japanese skincare!",
+      "imageUrl": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=800",
+      "maxWeight": "15kg",
+      "fee": "12%",
+      "cities": [
+        { "name": "Tokyo", "jastiper_count": 5, "image": "/images/japan/japan-1.jpg" },
+        { "name": "Osaka", "jastiper_count": 3, "image": "/images/japan/japan-2.jpg" },
+        { "name": "Kyoto", "jastiper_count": 2, "image": "/images/japan/japan-3.jpg" }
+      ]
+    },
+    {
+      "id": "trip3",
+      "jastiperId": "jastiper1",
+      "destination": "United States",
+      "country": "US",
+      "slug": "usa",
+      "departureDate": "2026-04-01",
+      "returnDate": "2026-04-15",
+      "status": "open",
+      "category": "Fashion & Supplements",
+      "description": "LA & NYC trip! Request branded fashion, sneakers, supplements, and other US products!",
+      "imageUrl": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800",
+      "maxWeight": "25kg",
+      "fee": "15%",
+      "cities": [
+        { "name": "New York", "jastiper_count": 4, "image": "/images/usa/usa-1.jpg" },
+        { "name": "Los Angeles", "jastiper_count": 3, "image": "/images/usa/usa-2.jpg" },
+        { "name": "San Francisco", "jastiper_count": 2, "image": "/images/usa/usa-3.jpg" }
+      ]
+    },
+    {
+      "id": "trip4",
+      "jastiperId": "jastiper3",
+      "destination": "Thailand",
+      "country": "Thailand",
+      "slug": "thailand",
+      "departureDate": "2026-03-25",
+      "returnDate": "2026-03-28",
+      "status": "open",
+      "category": "Food & Cosmetics",
+      "description": "Bangkok shopping trip! Thai snacks, cosmetics, Tiger Balm, and authentic Thai souvenirs!",
+      "imageUrl": "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=800",
+      "maxWeight": "10kg",
+      "fee": "8%",
+      "cities": [
+        { "name": "Bangkok", "jastiper_count": 4, "image": "/images/thailand/thailand-1.jpg" },
+        { "name": "Chiang Mai", "jastiper_count": 2, "image": "/images/thailand/thailand-2.jpg" },
+        { "name": "Phuket", "jastiper_count": 1, "image": "/images/thailand/thailand-3.jpg" }
+      ]
+    },
+    {
+      "id": "trip5",
+      "jastiperId": "jastiper4",
+      "destination": "Singapore",
+      "country": "Singapore",
+      "slug": "singapore",
+      "departureDate": "2026-04-05",
+      "returnDate": "2026-04-08",
+      "status": "open",
+      "category": "Luxury & Tech",
+      "description": "Singapore shopping! Request tech products, luxury items, and premium snacks!",
+      "imageUrl": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=800",
+      "maxWeight": "12kg",
+      "fee": "10%",
+      "cities": [
+        { "name": "Orchard", "jastiper_count": 3, "image": "/images/singapore/singapore-1.jpg" },
+        { "name": "Marina Bay", "jastiper_count": 2, "image": "/images/singapore/singapore-2.jpg" },
+        { "name": "Chinatown", "jastiper_count": 1, "image": "/images/singapore/singapore-3.jpg" }
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "id": "order1",
+      "userId": "user2",
+      "tripId": "trip1",
+      "jastiperId": "jastiper1",
+      "status": "delivered",
+      "items": [
+        {
+          "name": "COSRX Advanced Snail 96",
+          "category": "Skincare",
+          "estimatedPrice": 250000,
+          "quantity": 2,
+          "notes": "Yang original ya!"
+        }
+      ],
+      "totalEstimate": 500000,
+      "fee": 50000,
+      "grandTotal": 550000,
+      "shippingAddress": "Jl. Gatot Subroto No. 45, Jakarta Pusat",
+      "createdAt": "2026-02-01",
+      "deliveredAt": "2026-02-28"
+    },
+    {
+      "id": "order2",
+      "userId": "user3",
+      "tripId": "trip2",
+      "jastiperId": "jastiper2",
+      "status": "in_transit",
+      "items": [
+        {
+          "name": "Pokemon Card Pack",
+          "category": "Anime",
+          "estimatedPrice": 150000,
+          "quantity": 5,
+          "notes": "Cari yang rare ya!"
+        },
+        {
+          "name": "KitKat Matcha",
+          "category": "Snacks",
+          "estimatedPrice": 50000,
+          "quantity": 10,
+          "notes": ""
+        }
+      ],
+      "totalEstimate": 1250000,
+      "fee": 150000,
+      "grandTotal": 1400000,
+      "shippingAddress": "Jl. Asia Afrika No. 78, Bandung",
+      "createdAt": "2026-02-15",
+      "deliveredAt": null
+    },
+    {
+      "id": "order3",
+      "userId": "user1",
+      "tripId": "trip3",
+      "jastiperId": "jastiper1",
+      "status": "purchased",
+      "items": [
+        {
+          "name": "Nike Air Jordan 1",
+          "category": "Fashion",
+          "estimatedPrice": 2500000,
+          "quantity": 1,
+          "notes": "Size 42, warna Chicago"
+        }
+      ],
+      "totalEstimate": 2500000,
+      "fee": 375000,
+      "grandTotal": 2875000,
+      "shippingAddress": "Jl. Sudirman No. 123, Jakarta Selatan",
+      "createdAt": "2026-02-20",
+      "deliveredAt": null
+    },
+    {
+      "id": "order4",
+      "userId": "user4",
+      "tripId": "trip4",
+      "jastiperId": "jastiper3",
+      "status": "accepted",
+      "items": [
+        {
+          "name": "Tiger Balm Red",
+          "category": "Cosmetics",
+          "estimatedPrice": 30000,
+          "quantity": 10,
+          "notes": ""
+        },
+        {
+          "name": "Thai Tea Mix",
+          "category": "Food",
+          "estimatedPrice": 80000,
+          "quantity": 5,
+          "notes": "Yang original Cha Tra Mue"
+        }
+      ],
+      "totalEstimate": 700000,
+      "fee": 56000,
+      "grandTotal": 756000,
+      "shippingAddress": "Jl. Tunjungan No. 90, Surabaya",
+      "createdAt": "2026-02-25",
+      "deliveredAt": null
+    },
+    {
+      "id": "order5",
+      "userId": "user5",
+      "tripId": "trip5",
+      "jastiperId": "jastiper4",
+      "status": "requested",
+      "items": [
+        {
+          "name": "IRIS Air Purifier",
+          "category": "Electronics",
+          "estimatedPrice": 1800000,
+          "quantity": 1,
+          "notes": "Model terbaru HC-15"
+        }
+      ],
+      "totalEstimate": 1800000,
+      "fee": 180000,
+      "grandTotal": 1980000,
+      "shippingAddress": "Jl. Malioboro No. 12, Yogyakarta",
+      "createdAt": "2026-03-01",
+      "deliveredAt": null
+    },
+    {
+      "id": "order6",
+      "userId": "user1",
+      "tripId": "trip1",
+      "jastiperId": "jastiper1",
+      "status": "delivered",
+      "items": [
+        {
+          "name": "Laneige Cream Skin Toner",
+          "category": "Skincare",
+          "estimatedPrice": 320000,
+          "quantity": 3,
+          "notes": ""
+        }
+      ],
+      "totalEstimate": 960000,
+      "fee": 96000,
+      "grandTotal": 1056000,
+      "shippingAddress": "Jl. Sudirman No. 123, Jakarta Selatan",
+      "createdAt": "2026-01-20",
+      "deliveredAt": "2026-02-15"
+    },
+    {
+      "id": "order7",
+      "userId": "user2",
+      "tripId": "trip2",
+      "jastiperId": "jastiper2",
+      "status": "delivered",
+      "items": [
+        {
+          "name": "Uniqlo Heattech Set",
+          "category": "Fashion",
+          "estimatedPrice": 400000,
+          "quantity": 2,
+          "notes": "Size L, warna hitam"
+        }
+      ],
+      "totalEstimate": 800000,
+      "fee": 96000,
+      "grandTotal": 896000,
+      "shippingAddress": "Jl. Gatot Subroto No. 45, Jakarta Pusat",
+      "createdAt": "2026-01-15",
+      "deliveredAt": "2026-02-10"
+    },
+    {
+      "id": "order8",
+      "userId": "user3",
+      "tripId": "trip3",
+      "jastiperId": "jastiper1",
+      "status": "delivered",
+      "items": [
+        {
+          "name": "Optimum Nutrition Whey",
+          "category": "Supplements",
+          "estimatedPrice": 850000,
+          "quantity": 2,
+          "notes": "Rasa Double Chocolate"
+        }
+      ],
+      "totalEstimate": 1700000,
+      "fee": 255000,
+      "grandTotal": 1955000,
+      "shippingAddress": "Jl. Asia Afrika No. 78, Bandung",
+      "createdAt": "2026-01-10",
+      "deliveredAt": "2026-01-30"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "review1",
+      "orderId": "order1",
+      "userId": "user2",
+      "jastiperId": "jastiper1",
+      "rating": 5,
+      "comment": "Excellent service! Items arrived safely, packaging was neat. Kevin was very responsive!",
+      "createdAt": "2026-03-01"
+    },
+    {
+      "id": "review2",
+      "orderId": "order6",
+      "userId": "user1",
+      "jastiperId": "jastiper1",
+      "rating": 5,
+      "comment": "Laneige is authentic! Cheaper than in Indonesia. Will definitely order again!",
+      "createdAt": "2026-02-16"
+    },
+    {
+      "id": "review3",
+      "orderId": "order7",
+      "userId": "user2",
+      "jastiperId": "jastiper2",
+      "rating": 4,
+      "comment": "Good, but shipping took a bit long. Overall satisfied though!",
+      "createdAt": "2026-02-11"
+    },
+    {
+      "id": "review4",
+      "orderId": "order8",
+      "userId": "user3",
+      "jastiperId": "jastiper1",
+      "rating": 5,
+      "comment": "Authentic whey protein! Seal intact. Kevin is trustworthy!",
+      "createdAt": "2026-02-01"
+    },
+    {
+      "id": "review5",
+      "orderId": "order2",
+      "userId": "user3",
+      "jastiperId": "jastiper2",
+      "rating": 5,
+      "comment": "Amanda was very helpful! Constant updates on shopping progress. Recommended!",
+      "createdAt": "2026-03-05"
+    },
+    {
+      "id": "review6",
+      "orderId": "order3",
+      "userId": "user1",
+      "jastiperId": "jastiper1",
+      "rating": 5,
+      "comment": "Authentic Jordans! Perfect size. Thanks Kevin!",
+      "createdAt": "2026-03-04"
+    },
+    {
+      "id": "review7",
+      "orderId": "order4",
+      "userId": "user4",
+      "jastiperId": "jastiper3",
+      "rating": 4,
+      "comment": "Good items, but communication could be improved.",
+      "createdAt": "2026-03-03"
+    },
+    {
+      "id": "review8",
+      "orderId": "order5",
+      "userId": "user5",
+      "jastiperId": "jastiper4",
+      "rating": 5,
+      "comment": "Jessica is very professional! No worries entrusting luxury items to her.",
+      "createdAt": "2026-03-06"
+    }
+  ],
+  "products": [
+    {
+      "id": "product1",
+      "name": "COSRX Advanced Snail 96",
+      "category": "Skincare",
+      "country": "Korea",
+      "priceRange": "200k-300k",
+      "imageUrl": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400",
+      "description": "Essence populer untuk hydrating & repairing skin"
+    },
+    {
+      "id": "product2",
+      "name": "Laneige Cream Skin Toner",
+      "category": "Skincare",
+      "country": "Korea",
+      "priceRange": "250k-350k",
+      "imageUrl": "https://images.unsplash.com/photo-1616683693504-3ea7e9f6ec34?w=400",
+      "description": "Toner + moisturizer dalam satu produk"
+    },
+    {
+      "id": "product3",
+      "name": "Pokemon Card Pack",
+      "category": "Anime",
+      "country": "Jepang",
+      "priceRange": "100k-200k",
+      "imageUrl": "https://images.unsplash.com/photo-1613771404721-c5b18f750f75?w=400",
+      "description": "Trading card game Pokemon dari Jepang"
+    },
+    {
+      "id": "product4",
+      "name": "KitKat Matcha",
+      "category": "Snacks",
+      "country": "Jepang",
+      "priceRange": "30k-60k",
+      "imageUrl": "https://images.unsplash.com/photo-1621939514649-28b12e81658b?w=400",
+      "description": "KitKat rasa matcha asli dari Jepang"
+    },
+    {
+      "id": "product5",
+      "name": "Nike Air Jordan 1",
+      "category": "Fashion",
+      "country": "US",
+      "priceRange": "2jt-4jt",
+      "imageUrl": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400",
+      "description": "Sneakers iconic dari Nike"
+    },
+    {
+      "id": "product6",
+      "name": "Tiger Balm Red",
+      "category": "Cosmetics",
+      "country": "Thailand",
+      "priceRange": "20k-40k",
+      "imageUrl": "https://images.unsplash.com/photo-1600607686527-6fb886090705?w=400",
+      "description": "Obat gosok legendaris dari Thailand"
+    },
+    {
+      "id": "product7",
+      "name": "Thai Tea Mix",
+      "category": "Food",
+      "country": "Thailand",
+      "priceRange": "60k-100k",
+      "imageUrl": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400",
+      "description": "Teh Thailand original Cha Tra Mue"
+    },
+    {
+      "id": "product8",
+      "name": "IRIS Air Purifier",
+      "category": "Electronics",
+      "country": "Singapore",
+      "priceRange": "1.5jt-2.5jt",
+      "imageUrl": "https://images.unsplash.com/photo-1585647347483-22b66260dfff?w=400",
+      "description": "Air purifier compact dari Jepang"
+    },
+    {
+      "id": "product9",
+      "name": "Uniqlo Heattech Set",
+      "category": "Fashion",
+      "country": "Jepang",
+      "priceRange": "300k-500k",
+      "imageUrl": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=400",
+      "description": "Pakaian thermal untuk musim dingin"
+    },
+    {
+      "id": "product10",
+      "name": "Optimum Nutrition Whey",
+      "category": "Supplements",
+      "country": "US",
+      "priceRange": "700k-1jt",
+      "imageUrl": "https://images.unsplash.com/photo-1579722821273-0f6c7d44362f?w=400",
+      "description": "Protein whey untuk fitness"
+    }
+  ]
+}
