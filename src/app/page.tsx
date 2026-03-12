@@ -260,6 +260,91 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ⭐ 5-Star Reviews Carousel */}
+      <section className="py-32 bg-gradient-to-b from-muted/50 to-background">
+        <div className="container">
+          <div className="text-center mb-16 space-y-4">
+            <Badge variant="outline" className="px-4 py-2 border-primary text-primary text-sm font-bold uppercase tracking-widest">
+              What Our Users Say
+            </Badge>
+            <h2 className="text-4xl md:text-6xl font-bold">Loved by Thousands</h2>
+            <div className="flex items-center justify-center gap-2">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="h-8 w-8 fill-yellow-400 text-yellow-400" />
+              ))}
+              <span className="text-2xl font-bold ml-4">5.0/5.0</span>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+            {[
+              {
+                name: "Sarah Amelia",
+                avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop",
+                rating: 5,
+                comment: "Gila sih, JastipKu nyelamatin banget! Mau beli sepatu dari LA, traveler-nya responsif dan barang sampe dengan aman.",
+                location: "Jakarta"
+              },
+              {
+                name: "Michael Chen",
+                avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop",
+                rating: 5,
+                comment: "Sistem escrow-nya bikin tenang. Barang baru dibayar lunas setelah sampai Indonesia. Recommended!",
+                location: "Surabaya"
+              },
+              {
+                name: "Jessica Tan",
+                avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop",
+                rating: 5,
+                comment: "Foto real-time dari toko bikin yakin banget. Jastipernya juga ramah dan mau diajak nego. Top!",
+                location: "Bandung"
+              },
+              {
+                name: "David Pratama",
+                avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop",
+                rating: 5,
+                comment: "Pertama kali coba langsung ketagihan! Prosesnya cepet, aman, dan biayanya transparan banget.",
+                location: "Medan"
+              },
+              {
+                name: "Rachel Wijaya",
+                avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop",
+                rating: 5,
+                comment: "Udah 5x pake JastipKu, semua lancar jaya! Traveler-nya verified dan profesional. Mantap!",
+                location: "Bali"
+              }
+            ].map((review, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                whileHover={{ y: -8 }}
+                className="p-6 bg-card rounded-2xl border border-muted shadow-lg hover:shadow-2xl transition-all space-y-4"
+              >
+                <div className="flex items-center gap-1">
+                  {[...Array(review.rating)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground leading-relaxed italic">"{review.comment}"</p>
+                <div className="flex items-center gap-3 pt-4 border-t">
+                  <img
+                    src={review.avatar}
+                    alt={review.name}
+                    className="w-10 h-10 rounded-full object-cover"
+                  />
+                  <div>
+                    <div className="font-bold text-sm">{review.name}</div>
+                    <div className="text-xs text-muted-foreground">{review.location}</div>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* 🏁 CTA Section */}
       <section className="py-40 relative overflow-hidden bg-primary">
          <div className="absolute inset-0 z-0">
