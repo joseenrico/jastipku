@@ -7,6 +7,7 @@ import {
   getTripsByJastiperId,
   getUserById
 } from "@/lib/data";
+import { formatIDR } from "@/lib/utils";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -120,8 +121,8 @@ export default function JastiperDashboard() {
         {/* Stats Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { label: "Total Earnings", value: `Rp ${totalEarnings.toLocaleString()}`, icon: DollarSign, color: "text-emerald-500", bg: "bg-emerald-500/10" },
-            { label: "Pending Escrow", value: `Rp ${pendingEarnings.toLocaleString()}`, icon: Clock, color: "text-amber-500", bg: "bg-amber-500/10" },
+            { label: "Total Earnings", value: formatIDR(totalEarnings), icon: DollarSign, color: "text-emerald-500", bg: "bg-emerald-500/10" },
+            { label: "Pending Escrow", value: formatIDR(pendingEarnings), icon: Clock, color: "text-amber-500", bg: "bg-amber-500/10" },
             { label: "Active Trips", value: trips.length.toString(), icon: Plane, color: "text-blue-500", bg: "bg-blue-500/10" },
             { label: "Success Rate", value: "98.5%", icon: TrendingUp, color: "text-purple-500", bg: "bg-purple-500/10" },
           ].map((stat, i) => (
@@ -324,7 +325,7 @@ export default function JastiperDashboard() {
                 <div className="grid grid-cols-2 gap-3">
                   <div className="p-4 bg-white/5 rounded-2xl border border-white/10 text-center">
                     <p className="text-xs font-black text-slate-500 uppercase">Estimated Tax</p>
-                    <p className="text-lg font-black text-amber-500">Rp {Math.round(totalTaxIdr).toLocaleString()}</p>
+                    <p className="text-lg font-black text-amber-500">{formatIDR(Math.round(totalTaxIdr))}</p>
                     <p className="text-[10px] text-slate-500 mt-1">≈ ${totalTaxUsd.toFixed(2)}</p>
                   </div>
                   <div className="p-4 bg-white/5 rounded-2xl border border-white/10 text-center">

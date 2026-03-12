@@ -6,12 +6,14 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function formatIDR(amount: number): string {
-  return new Intl.NumberFormat("id-ID", {
+  const formatted = new Intl.NumberFormat("id-ID", {
     style: "currency",
     currency: "IDR",
     minimumFractionDigits: 0,
     maximumFractionDigits: 0,
   }).format(amount);
+  // Remove space between Rp and amount (Intl adds a space by default)
+  return formatted.replace("Rp ", "Rp");
 }
 
 export function formatCurrency(amount: number, currency: string = "IDR"): string {

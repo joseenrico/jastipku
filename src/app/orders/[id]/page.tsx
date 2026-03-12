@@ -255,18 +255,18 @@ export default function OrderTrackingPage() {
                       <p className="font-bold text-sm tracking-tight">{item.name}</p>
                       <p className="text-[10px] text-muted-foreground uppercase font-black">Qty: {item.quantity}</p>
                     </div>
-                    <p className="font-black text-sm">Rp {( (item as any).price || (item as any).estimatedPrice || 0).toLocaleString()}</p>
+                    <p className="font-black text-sm">Rp{((item as any).price || (item as any).estimatedPrice || 0).toLocaleString("id-ID").replace(/,/g, ".")}</p>
                   </div>
                 ))}
               </div>
               <div className="pt-4 border-t-2 border-dashed space-y-3">
-                <div className="flex justify-between text-sm">
+                <div className="flex justify-between items-center text-sm">
                   <span className="text-muted-foreground font-medium">Escrow Fee</span>
-                  <span className="font-bold">Rp {(order.fee || 0).toLocaleString()}</span>
+                  <span className="font-bold">Rp{(order.fee || 0).toLocaleString("id-ID").replace(/,/g, ".")}</span>
                 </div>
-                <div className="flex justify-between items-end">
-                  <span className="text-xs font-black uppercase tracking-[0.2em] text-primary">Total Paid</span>
-                  <span className="text-2xl font-black tracking-tighter">Rp {(order.grandTotal || 0).toLocaleString()}</span>
+                <div className="flex justify-between items-center">
+                  <span className="text-xs font-black uppercase tracking-widest text-primary">Total Paid</span>
+                  <span className="text-xl font-black tracking-tighter">Rp{(order.grandTotal || 0).toLocaleString("id-ID").replace(/,/g, ".")}</span>
                 </div>
               </div>
             </Card>

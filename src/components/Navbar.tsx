@@ -14,6 +14,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useAuth } from "@/contexts/AuthContext";
 import { NotificationBell } from "@/components/NotificationBell";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { formatIDR } from "@/lib/utils";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -168,7 +169,7 @@ export function Navbar() {
                 <DropdownMenuItem asChild>
                   <Link href="/profile" className="cursor-pointer">
                     <Wallet className="mr-2 h-4 w-4" />
-                    <span>JastipPay: Rp {user.jastipPayBalance.toLocaleString()}</span>
+                    <span>JastipPay: {formatIDR(user.jastipPayBalance)}</span>
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>

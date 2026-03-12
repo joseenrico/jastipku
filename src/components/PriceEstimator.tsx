@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { formatIDR } from "@/lib/utils";
 import { GlassInput } from "@/components/ui/glass";
 import { ArrowRightLeft, Percent, DollarSign, Calculator, Info } from "lucide-react";
 import {
@@ -54,15 +55,6 @@ export function PriceEstimator({ className, defaultJastipFee = 15, defaultTax = 
     const timer = setTimeout(() => setIsCalculating(false), 300);
     return () => clearTimeout(timer);
   }, [amount, fromCurrency, jastipFee, tax]);
-
-  const formatIDR = (value: number) => {
-    return new Intl.NumberFormat("id-ID", {
-      style: "currency",
-      currency: "IDR",
-      minimumFractionDigits: 0,
-      maximumFractionDigits: 0,
-    }).format(value);
-  };
 
   const formatForeign = (value: number) => {
     return new Intl.NumberFormat("en-US", {
@@ -158,7 +150,7 @@ export function PriceEstimator({ className, defaultJastipFee = 15, defaultTax = 
                   Exchange Rate
                 </span>
                 <span className="font-medium">
-                  1 {fromCurrency.code} = Rp {fromCurrency.rate.toLocaleString("id-ID")}
+                  1 {fromCurrency.code} = {formatIDR(fromCurrency.rate)}
                 </span>
               </div>
             )}

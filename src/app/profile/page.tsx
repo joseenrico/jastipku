@@ -10,6 +10,7 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { formatIDR } from "@/lib/utils";
 import {
   User,
   Mail,
@@ -114,7 +115,7 @@ export default function ProfilePage() {
 
 const stats = [
     { icon: Package, value: userOrders.length, label: "Total Orders", color: "text-blue-500" },
-    { icon: Wallet, value: `Rp ${user.jastipPayBalance.toLocaleString()}`, label: "JastipPay", color: "text-orange-500" },
+    { icon: Wallet, value: formatIDR(user.jastipPayBalance), label: "JastipPay", color: "text-orange-500" },
     { icon: CheckCircle2, value: historyOrders.length, label: "Completed", color: "text-green-500" },
     { icon: TrendingUp, value: user.role === "buyer" ? "Buyer" : "Jastiper", label: "Account Type", color: "text-purple-500" },
   ];
@@ -301,7 +302,7 @@ const stats = [
                     </div>
                     <div>
                       <p className="text-white/80 text-xs font-medium uppercase tracking-widest">Available Balance</p>
-                      <h3 className="text-3xl font-bold mt-1">Rp {user.jastipPayBalance.toLocaleString()}</h3>
+                      <h3 className="text-3xl font-bold mt-1">{formatIDR(user.jastipPayBalance)}</h3>
                     </div>
                     <div className="flex gap-2">
                       <Button
@@ -344,7 +345,7 @@ const stats = [
                               </div>
                               <div className="text-right">
                                 <p className={`font-bold text-sm ${tx.type === "topup" ? "text-green-600" : "text-blue-600"}`}>
-                                  {tx.type === "topup" ? "+" : "-"} Rp {tx.amount.toLocaleString()}
+                                  {tx.type === "topup" ? "+" : "-"} {formatIDR(tx.amount)}
                                 </p>
                                 <Badge variant="outline" className="h-4 text-[10px] uppercase font-semibold">
                                   {tx.status}
