@@ -218,6 +218,106 @@
         { "name": "Marina Bay", "jastiper_count": 2, "image": "/images/singapore/singapore-2.jpg" },
         { "name": "Chinatown", "jastiper_count": 1, "image": "/images/singapore/singapore-3.jpg" }
       ]
+    },
+    {
+      "id": "trip6",
+      "jastiperId": "jastiper2",
+      "destination": "United Kingdom",
+      "country": "United Kingdom",
+      "slug": "united-kingdom",
+      "departureDate": "2026-04-10",
+      "returnDate": "2026-04-20",
+      "status": "open",
+      "category": "Fashion & Luxury",
+      "description": "London shopping trip! Request Burberry, premium tea, British cosmetics, and vintage items!",
+      "imageUrl": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800",
+      "maxWeight": "18kg",
+      "fee": "14%",
+      "cities": [
+        { "name": "London", "jastiper_count": 5, "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800" },
+        { "name": "Manchester", "jastiper_count": 2, "image": "https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?w=800" },
+        { "name": "Edinburgh", "jastiper_count": 1, "image": "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=800" }
+      ]
+    },
+    {
+      "id": "trip7",
+      "jastiperId": "jastiper5",
+      "destination": "Australia",
+      "country": "Australia",
+      "slug": "australia",
+      "departureDate": "2026-04-15",
+      "returnDate": "2026-04-25",
+      "status": "open",
+      "category": "Health & Beauty",
+      "description": "Sydney & Melbourne trip! Request UGG boots, skincare, supplements, and Australian souvenirs!",
+      "imageUrl": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=800",
+      "maxWeight": "20kg",
+      "fee": "12%",
+      "cities": [
+        { "name": "Sydney", "jastiper_count": 4, "image": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=800" },
+        { "name": "Melbourne", "jastiper_count": 3, "image": "https://images.unsplash.com/photo-1524594152303-9fd13543fe6e?w=800" },
+        { "name": "Gold Coast", "jastiper_count": 2, "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800" }
+      ]
+    },
+    {
+      "id": "trip8",
+      "jastiperId": "jastiper4",
+      "destination": "France",
+      "country": "France",
+      "slug": "france",
+      "departureDate": "2026-05-01",
+      "returnDate": "2026-05-15",
+      "status": "upcoming",
+      "category": "Luxury & Perfume",
+      "description": "Paris Fashion Week trip! Request Chanel, Dior, luxury bags, perfumes, and French cosmetics!",
+      "imageUrl": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800",
+      "maxWeight": "15kg",
+      "fee": "18%",
+      "cities": [
+        { "name": "Paris", "jastiper_count": 6, "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800" },
+        { "name": "Nice", "jastiper_count": 2, "image": "https://images.unsplash.com/photo-1533105079780-92b9be482077?w=800" },
+        { "name": "Lyon", "jastiper_count": 1, "image": "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800" }
+      ]
+    },
+    {
+      "id": "trip9",
+      "jastiperId": "jastiper3",
+      "destination": "Germany",
+      "country": "Germany",
+      "slug": "germany",
+      "departureDate": "2026-05-10",
+      "returnDate": "2026-05-20",
+      "status": "upcoming",
+      "category": "Automotive & Tech",
+      "description": "Munich & Berlin trip! Request car accessories, tech gadgets, German tools, and beer!",
+      "imageUrl": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800",
+      "maxWeight": "22kg",
+      "fee": "13%",
+      "cities": [
+        { "name": "Berlin", "jastiper_count": 3, "image": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800" },
+        { "name": "Munich", "jastiper_count": 3, "image": "https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?w=800" },
+        { "name": "Frankfurt", "jastiper_count": 2, "image": "https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?w=800" }
+      ]
+    },
+    {
+      "id": "trip10",
+      "jastiperId": "jastiper4",
+      "destination": "Italy",
+      "country": "Italy",
+      "slug": "italy",
+      "departureDate": "2026-05-20",
+      "returnDate": "2026-06-05",
+      "status": "upcoming",
+      "category": "Fashion & Leather",
+      "description": "Milan & Rome trip! Request Gucci, Prada, leather goods, Italian shoes, and premium coffee!",
+      "imageUrl": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=800",
+      "maxWeight": "16kg",
+      "fee": "16%",
+      "cities": [
+        { "name": "Rome", "jastiper_count": 4, "image": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=800" },
+        { "name": "Milan", "jastiper_count": 5, "image": "https://images.unsplash.com/photo-1520175480921-4edfa2983e0f?w=800" },
+        { "name": "Florence", "jastiper_count": 3, "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800" }
+      ]
     }
   ],
   "orders": [

@@ -92,6 +92,36 @@ const galleryImages: Record<string, { src: string; alt: string }[]> = {
     { src: "/images/singapore/singapore-3.jpg", alt: "Singapore tech" },
     { src: "/images/singapore/singapore-4.jpg", alt: "Singapore electronics" },
   ],
+  trip6: [
+    { src: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800", alt: "London street view" },
+    { src: "https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?w=800", alt: "Manchester shopping" },
+    { src: "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=800", alt: "Edinburgh castle" },
+    { src: "https://images.unsplash.com/photo-1520939817895-060bdaf4de1e?w=800", alt: "British cosmetics" },
+  ],
+  trip7: [
+    { src: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=800", alt: "Sydney Opera House" },
+    { src: "https://images.unsplash.com/photo-1524594152303-9fd13543fe6e?w=800", alt: "Melbourne street" },
+    { src: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800", alt: "Gold Coast beach" },
+    { src: "https://images.unsplash.com/photo-1528659570420-ef5354e30e40?w=800", alt: "UGG boots Australia" },
+  ],
+  trip8: [
+    { src: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800", alt: "Paris Eiffel Tower" },
+    { src: "https://images.unsplash.com/photo-1533105079780-92b9be482077?w=800", alt: "Nice French Riviera" },
+    { src: "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800", alt: "Lyon shopping" },
+    { src: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800", alt: "French perfume" },
+  ],
+  trip9: [
+    { src: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800", alt: "Berlin street" },
+    { src: "https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?w=800", alt: "Munich architecture" },
+    { src: "https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?w=800", alt: "Frankfurt skyline" },
+    { src: "https://images.unsplash.com/photo-1572508589189-898f3e17a6c6?w=800", alt: "German tech gadgets" },
+  ],
+  trip10: [
+    { src: "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=800", alt: "Rome Colosseum" },
+    { src: "https://images.unsplash.com/photo-1520175480921-4edfa2983e0f?w=800", alt: "Milan fashion" },
+    { src: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800", alt: "Florence art" },
+    { src: "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=800", alt: "Italian leather goods" },
+  ],
 };
 
 export default function TripDetailPage() {
@@ -506,7 +536,7 @@ export default function TripDetailPage() {
                       <Users className="h-5 w-5 text-primary" />
                       Request Order
                     </h2>
-                    <p className="text-sm text-muted-foreground mt-1">Service fee: {(trip as any).fee || "15"}%</p>
+                    <p className="text-sm text-muted-foreground mt-1">Service fee: {(trip as any).fee || "15"}</p>
                   </div>
                 </div>
               </CardHeader>
