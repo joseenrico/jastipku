@@ -156,7 +156,7 @@ export default function JastiperProfilePage() {
         </Card>
 
         {/* Achievement Badges */}
-        <Card className="mt-6 border-0 shadow-lg">
+        <Card className="p-4 mt-6 border-0 shadow-lg">
           <CardHeader>
             <h2 className="text-xl font-bold flex items-center gap-2">
               <Award className="h-5 w-5 text-primary" />
@@ -189,7 +189,7 @@ export default function JastiperProfilePage() {
         </Card>
 
         {/* Active Trips */}
-        <Card className="mt-6 border-0 shadow-lg">
+        <Card className="p-4 mt-6 border-0 shadow-lg">
           <CardHeader>
             <div className="flex items-center justify-between">
               <div>

@@ -138,7 +138,7 @@ export default function TripCitiesPage() {
                 transition={{ duration: 0.4, delay: 0.5 + index * 0.1 }}
               >
                 <Link
-                  href={`/trips/${countrySlug}/${slugify(city.name)}`}
+                  href={`/trips/${countrySlug}/${slugify(city.name)}/jastipers`}
                   className="group block"
                   onClick={() => handleCityClick({ name: city.name, slug: slugify(city.name), coordinates: { lat: 0, lng: 0 }, jastiper_count: city.jastiper_count, image: city.image })}
                 >
